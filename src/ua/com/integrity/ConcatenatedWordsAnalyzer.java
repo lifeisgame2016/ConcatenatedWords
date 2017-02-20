@@ -13,7 +13,7 @@ public class ConcatenatedWordsAnalyzer {
 
     // create new set to avoid side-effect and improve performance
     public ConcatenatedWordsAnalyzer(List<String> words) {
-        this.words = new TreeSet<>(words);
+        this.words = new HashSet<>(words);
         analyze();
     }
 
